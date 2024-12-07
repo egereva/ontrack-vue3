@@ -20,7 +20,12 @@ import { NAV_ITEMS } from '../constants'
 
 const emit = defineEmits(['navigate'])
 
-defineProps(['currentPage'])
+defineProps({
+    currentPage: {
+        type: String,
+        required: true,
+    },
+})
 </script>
 
 <style lang="scss" scoped></style>
